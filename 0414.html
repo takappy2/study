@@ -79,22 +79,25 @@
    });
 
     //toggleの勉強
-    $(".more").on('click' ,function(){
-        $("#main").slideToggle(1000);
-	$("#h-slide").slideToggle(1000);
+      $(".more").on('click' ,function(){
+          $("#main").slideToggle(1000);
+          $("#h-slide").slideToggle(1000);
 
-    //animate({},1000,function(){})が原型
-	$("#wrappar").animate({"backgroundColor":"yellow"},1000 ,function(){
-	$("#wrappar").animate({"backgroundColor":"white"},1000);
-        	$("#icon").animate({"marginLeft":"+=100px"},3000,function(){
-                	$("#icon").animate({"marginTop":"0px"},3000,function(){
-	            
-                        });
-        	});
-	});
+          //animate({},1000,function(){})が原型
+          $("#wrappar").animate({"backgroundColor":"yellow"},1000 ,function(){
 
-		
-    });
+              $("#wrappar").animate({"backgroundColor":"blue"},1000,function(){
+                  $("#wrappar").animate({"backgroundColor":"white"},1000);
+              });
+              $("#icon").animate({"marginLeft":"+=100px"},3000,function(){
+                  $("#icon").animate({"marginTop":"0px"},3000,function(){
+
+                  });
+              });
+
+          });
+
+      });
 
 
 
