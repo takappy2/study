@@ -1,0 +1,372 @@
+
+
+
+/*日本語系*/
+/*    font-family: 'Noto Sans JP', sans-serif; */
+
+
+/*見出し系*/
+/*    font-family: 'Righteous', cursive; */
+
+/*小文字系*/
+/*    font-family: 'Noto Sans KR', sans-serif; */
+
+
+/*span系　おしゃれなやつ*/
+/*    font-family: 'Pacifico', cursive; */
+
+
+#wrappar {
+  width:100%;
+  background-color:#fff;
+}
+
+#squareeeeeee {
+  border-top:5% solid #000;
+  position:fixed;
+  z-index:100;
+  width:100%;
+  height:100%;
+}
+
+
+
+
+#header {
+  width:90%;  
+
+}
+
+#h-slide {
+  width:90%;
+  margin:auto;
+}
+
+#h-slide img {
+  width:100%;
+  margin:auto;
+  position:relative;
+  z-index:0; 
+}
+
+
+
+#taste {
+  text-align:center;
+  padding-bottom:10px;
+  position:absolute;
+  z-index:1;
+  bottom:35%;
+  right:40%;
+  color:#fff;
+}
+
+
+#taste p {
+  font-family: 'Pacifico', cursive;
+  font-size:40px; 
+}
+
+
+#taste h3 {
+  font-family: 'Pacifico', cursive; 
+  font-size:20px;
+}
+
+
+#taste h2 { 
+  font-size:40px; 
+  padding:10px 0px;
+}
+
+
+#taste h1 {
+  font-family: 'Righteous', cursive;
+  font-size:90px; 
+}
+
+
+
+/*header終わり*/
+
+
+/*title始まり*/
+
+#title {
+  text-align:center;
+}
+
+#title h1{
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  font-size:60px; 
+  font-weight: bold;
+  line-height: 1.28;
+  border-bottom: 2px solid;
+  padding-top:100px; 
+
+}
+
+
+#title h2{
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  font-size:20px; 
+  font-weight: bold;
+  line-height: 1.28;
+  padding-top:20px;
+  padding-bottom:100px;
+}
+
+
+/*title終わり*/
+
+
+/*main始まり*/
+
+#main  {
+  width:90%;
+  margin:auto;
+}
+
+.section-left {
+  width:100%;
+  padding-bottom:0px;
+}
+
+.section-left .left-image {
+  float:left;
+  width:50%;
+
+}
+
+.left-image img {
+  width:100%;
+
+}
+
+.left-article {
+  float:right;
+  width:50%; 
+  font-family: 'Noto Sans JP', sans-serif; 
+
+}
+
+.left-article h1 {
+  width:80%;
+  margin-left:5%;
+  margin-right:15%;
+  font-size: 25px;
+  margin-bottom:70px;
+  margin-top:200px;
+
+}
+
+.left-article h3 {
+  font-size: 15px;
+  width:80%;
+  margin-left:5%;
+  margin-right:15%;
+  line-height:2;
+
+}
+
+
+
+
+.section-right {
+  width:100%;
+  padding-bottom:0px;
+}
+
+.right-article {
+  float:left;
+  width:50%; 
+  font-family: 'Noto Sans JP', sans-serif; 
+
+}
+
+.right-article h1 {
+  width:80%;
+  margin-left:5%;
+  margin-right:15%;
+  font-size: 25px;
+  margin-bottom:70px;
+  margin-top:200px;
+
+}
+
+.right-article h3 {
+  font-size: 15px;
+  width:80%;
+  margin-left:5%;
+  margin-right:15%;
+  line-height:2;
+
+}
+
+
+.right-image img {
+  width: 100%;
+
+}
+
+
+.section-right .right-image {
+  float:left;
+  width:50%;
+
+}
+
+
+
+
+
+
+/*footer始まり*/
+
+
+#footer {
+  margin: 0 40px 40px;
+  padding: 100px 0;
+  color: #ffffff;
+  background: #000000;
+}
+
+
+#container {
+  max-width: 1660px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+.container-box {
+  width:50%;
+  float:left;
+}
+
+
+.container-box img {
+  float:left;
+  vertical-align: bottom;
+  width:30%;
+  height: auto;
+  margin-left:30%;
+}
+
+
+.container-text {
+  float:left;
+  display:inline-block;
+  width:40%;  
+  padding-left:15%; 
+}
+
+
+.container-text h1 {
+  width:100%;
+  line-height:1;
+  font-size:12px;
+}
+
+
+.container-text ul {
+  width:100%;
+
+}
+
+.container-text ul li {
+  padding-top:30px;  
+  font-family: 'Righteous', cursive;
+
+}
+
+#container-right {
+  float:right;
+  width:50%;
+  color:#fff;
+}
+
+.r-1 {
+  width:90%;
+  margin-right:10%;
+} 
+
+#container-right ul {
+  width:100%;
+
+}
+#container-right .r-1  ul li {
+  float:left;
+  border-right:2px solid #fff;
+  width:30%;
+  padding-right:15px;
+  padding-left:15px;
+  font-size:14px;
+  text-align:left;
+}
+
+
+
+.r-2 {
+  width:90%;
+  margin-right:10%;
+  margin-top:40px;
+} 
+
+#container-right .r-2 ul {
+  width:100%;
+
+}
+
+#container-right .r-2  ul li {
+  float:left; 
+  padding-left:15px; 
+}
+
+
+#container-right p {
+  padding-left:15px;
+  font-size:12px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+
+/*container-right終わり*/
+
+#container-bottom {
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+  padding-top:250px;
+}
+
+
+#container-bottom p {
+  padding-top:80px;
+  text-align:center;
+  padding-bottom:20px;
+}
+
+.bottom-image {
+  width:100%;
+}
+
+
+/*footer終わり*/
+
+
+
+
+
+
+
+
+
+
+
+
+
