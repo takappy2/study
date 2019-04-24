@@ -1,0 +1,479 @@
+
+
+
+/*ニコモジフォント*/
+/*   font-family: "Nico Moji"; */
+
+/*クールなアルファベットフォント*/
+/*   font-family: 'Merriweather', serif;*/
+
+/*美しい日本語フォント*/
+/*   font-family: 'Noto Sans SC', sans-serif;*/
+
+/*かわいい日本語フォント*/
+/*   font-family: 'M PLUS Rounded 1c', sans-serif;*/
+
+
+#background  {
+  width:100%;
+  background-color:purple;
+}
+
+#wrappar {
+  width:100%;
+}
+
+/*<!--2個目の課題で使用します-->*/
+
+#blog-start {
+  width:600px;
+  max-width:600px;
+  margin:auto;
+  background-color:#fff;
+  box-shadow:3px 3px 3px #808080;  
+}
+
+#blog-head {
+  width:100%;
+}
+
+#blog-title {
+  width:100%;
+  background-color:#000;
+  font-family: 'Merriweather', serif;
+  color:#fff;
+  padding:5px 5px;
+}
+
+.title-left {
+  float:left;
+  width:50%;
+  text-align:left;
+  padding:5px;
+  font-size:20px;
+}
+
+.title-left :hover {
+  color:red;
+  font-size:30px;
+  text-shadow:3px 3px 3px #fff;
+}
+
+.title-right {
+  float:left;
+  width:50%;
+  text-align:right;
+  padding:5px;
+  font-size:15px;
+}
+
+.title-right :hover {
+  color:blue;
+  font-size:30px;
+  text-shadow:3px 3px 3px #fff;
+}
+#title-image {
+  width:100%;
+}
+
+
+
+#title-bottom  {
+  width:100%;
+}
+
+#bottom-head  {
+  width:70%;  
+  float:left;
+}
+
+.head-left  {
+  float:left;
+  width:20%;
+  
+}
+.head-left img {
+  width:100%;
+  border-radius: 50%; 
+  padding:10px 
+}
+
+.head-right {
+  float:left;
+  width:75%;
+  padding-left:5%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+.head-right h2 {
+  font-size:17px; 
+}
+
+.head-right p {
+  color: #808080;
+  font-size: 11px;
+  padding: 8px 0 0;
+}
+
+
+#button {
+  float:right;
+  width:30%;
+  padding: 25px 14px 5px;
+  text-align:right;
+}
+
+#button h2 {
+  width: 100px;
+  border: 1px solid #808080;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  margin: 0 5px;
+  display: inline-block;
+  padding-right:17px;   
+}
+
+
+#button h2:hover {
+  border:1px solid #808080;
+  font-size:18px;
+  color:#000;
+  padding:8px;
+  font-family: 'Noto Sans SC', sans-serif;
+  border-radius:5px;
+  box-shadow:3px 3px 3px #000;
+}
+
+
+
+/*title-footerスタート*/
+#title-footer {
+  background-color:#f9f9f9;
+  width:600px;
+  max-width:600px;
+  margin:auto; 
+}
+
+#title-footer ul {
+  width:100%;
+}
+
+#title-footer ul li {
+  float:left;
+  padding:10px;
+  font-size:12px;
+}
+
+#title-footer ul li:hover {
+  color:#808080;
+}
+
+
+/*title-footer終わりです*/
+
+
+/*blog-start 終わりです*/
+
+
+/*main 始めます*/
+
+
+
+/*aricle start */
+.article {
+  width:580px;
+  max-width:580px;
+  margin:auto;
+  background-color:#fff;
+  box-shadow:3px 3px 3px #808080;
+  margin-top:20px;
+}
+
+/*post start*/
+.post {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  padding:30px 30px;
+}
+
+.post h2 {
+  font-size:20px;
+  margin-bottom:23px;
+}
+
+.post p {
+  font-size:13px;
+}
+
+.post-bottom {
+  width:100%;
+  color:#ABABAB;
+  padding-bottom:40px;
+}
+
+.post-bottom ul {
+  float:left;
+  width:30%;
+}
+
+.post-bottom ul li {
+  float:left;
+  width:15%;
+  margin-left:10px;
+  font-size:16px;
+}
+
+.post-bottom p {
+  text-align:right;
+  padding-right:10px;
+  font-size:12px;
+}
+
+/*post 終わりです*/
+
+
+/*product start */
+
+#product {
+  width:560px;
+  margin-left:10px;
+  margin-right:10px;
+  border-top:1px solid #CFCFCF;
+  border-bottom:1px solid #CFCFCF;
+  font-family: 'Noto Sans SC', sans-serif;
+  text-align:center;
+}
+
+#product p {
+  font-size:14px;
+  line-height:1.5;
+}
+
+.t100 {
+  margin-top:100px;
+}
+
+.b100 {
+  margin-bottom:100px;
+}
+
+#product span {
+  font-weight:bold;
+  font-family: 'Merriweather', serif;
+  font-size:17px;  
+}
+
+#product span:hover {
+  color:#808080;
+}
+.b30 {
+  margin-bottom:30px;
+}
+
+.border {
+  border-bottom:1px solid #000;
+}
+
+.b300 {
+  margin-bottom:300px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*content-menu スタート*/
+
+#content-menu {
+  width:580px;
+  max-width:580px;
+  margin:auto;
+  background-color:#fff;
+  font-family: 'Noto Sans SC', sans-serif;
+  margin-top:20px;  
+  box-shadow:3px 3px 3px #808080;  
+}
+
+#content-menu h1 {
+  color:#808080;
+  font-size:18px;
+  text-align:center;
+  padding:6px 6px;
+  text-shadow:3px 3px 3px #000;
+}
+
+#content-menu h1:hover {
+  color:red;
+  text-shadow:3px 3px 3px #808080;
+}
+
+/*content-menu 終わりです*/
+
+/*--2個目の課題で使用します--*/
+
+
+
+
+/*--2個目の課題で使用します--*/
+
+
+/*blog-bottom start */
+/*blog-bottomは #catchと、#sectionで基本構成されています。*/
+
+
+#blog-bottom {
+  width:600px;
+  max-width:600px;
+  margin:auto;
+  background-color:#fff;
+  box-shadow:3px 3px 3px #808080;  
+  margin-top:20px;  
+}
+
+#catch {
+  width:100%;
+  border-top:2px solid #000;
+  border-bottom:2px solid rgba(183,186,183,0.5);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#catch h2 {
+  float:left;
+  font-size:18px;
+  font-weight:bold;
+  padding:13px;
+}
+
+#catch h2:hover {
+  color:pink;
+  text-shadow:3px 3px 3px #808080;
+}
+
+#catch p {
+  float:right;
+  padding:13px;
+  font-size:14px;
+  color:#808080;
+}
+
+#catch p:hover {
+  color:blue;
+  text-shadow:3px 3px 3px #808080;
+}
+
+
+#section {
+  width:100%;
+  border-bottom:1px solid rgba(183,186,183,0.5);
+  font-family: 'Noto Sans SC', sans-serif; 
+}
+
+.section-left {
+  float:left;
+  
+} 
+
+.section-left img {
+  float:left;
+  width:90px;
+  height:90px;
+  padding:10px;
+  border-radius:30%;
+}
+
+.section-left img:hover {
+  opacity:0.6;
+}
+.section-text {
+  float:left;
+  
+}
+
+.section-text h2 {
+  font-size:16px; 
+  padding-top:20px;
+  padding-bottom:10px;  
+}
+
+.section-text p {
+  font-size:13px; 
+  padding-bottom:15px;
+  color:#808080; 
+}
+
+.section-right {
+  float:right; 
+}
+
+.section-right p {
+  padding:40px 10px;
+}
+
+.section-right p:hover {
+  color:red;
+  text-shadow:3px 3px 3px #000;
+}
+
+
+
+/*blog-footer start*/
+
+#blog-footer {  
+  width:600px;
+  max-width:600px;
+  margin:auto;
+  background-color:#121213;
+  box-shadow:3px 3px 3px #808080;  
+  margin-top:20px;
+  color:#fff;
+  font-family: 'Merriweather', serif;
+  text-align:center;  
+}
+
+#blog-footer h1 {
+  padding:16px;
+  font-size:16px
+}
+
+#blog-footer h2 {
+  padding:6px;
+  font-size:13px
+}
+
+#footer-icon {
+  width:100%;
+  padding-bottom:16px;
+}
+
+#footer-icon ul li {
+  float:left;
+  width:calc(100% /3);
+}
+
+
+/*blog-footer　終わりです*/
+
+/*blog-bottom　終わりです*/
+
+
+/*--2個目の課題で使用します--*/
+
+
+
+
+
