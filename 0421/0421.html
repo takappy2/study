@@ -14,16 +14,92 @@
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<!--スマホ化-->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <!--jQueryはここ-->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
+<script>
+  $(function(){
+
+
+
+ <!--スクロールされたときに中が実行され続ける-->
+    $(window).scroll(function() {
+    console.log("スクロール値は$(this).scrollTop()でとる。とった値は→"+ $(this).scrollTop());
+     if ($(this).scrollTop() <4000) {
+         
+         $('#top-signal').hide();
+
+        }
+
+
+     if ($(this).scrollTop() >4000) {
+         
+         $('#top-signal').hide();
+         $('#top-signal').fadeIn(2000);
+
+        }
+ 
+    });
+
+   $("#month-list").on("click",function(){
+       $("#year-list").toggle(500);    
+
+     });
+
+   $("#category").on("click",function(){
+       $("#year-list2").toggle(500);    
+
+     });
+
+
+
+
+
+
+ <!-- スライドショー -->
+   $('#title-image').slick({
+     infinite: true,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 1000,
+     arrows: true,
+    });
+
+   $('#steak').slick({
+     infinite: true,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 1000,
+     arrows: true,
+    });
+
+
+
+
+
+
+  });
+
+
+</script> 
 </head>
 <body>
 
 
-<div id="background">
-  
+
+<video src="video.mp4"></video>  
 
 
 <div id="wrappar">
@@ -45,18 +121,27 @@
      <h2>ログイン</h2>
     </div>
 
-<!--2個目の課題で使用します-->
-
-
   <!--blog-title終わりです-->
   </div>
+
+   <div id="list">
+     <ul>
+       <li class="boldli">BLOG /</li>
+       <li>日記</li>
+       <li>ビューティー</li>
+       <li>ファッション</li>
+       <li>ショッピング</li>
+     </ul>
+   </div>
+
+
 
   <!--title-image-->
 　<div id="title-image">
 　　<img src="img/head1.png">
-　　<img src="ig/head2.png">
-　　<img src="ig/head3.png">
-　　<img src="ig/head4.png">
+　　<img src="img/head2.png">
+　　<img src="img/head3.png">
+　　<img src="img/head4.png">
   <!--title-image終わりです-->
   </div>
 
@@ -129,7 +214,7 @@
       <div class="haisin">
          <a href="#"><h2>＼* YouTubeも配信中* ／</h2></a>
       </div>
-
+<iframe width="450" height="315" src="https://www.youtube.com/embed/c9JO54MN9Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    
       <div class="saki-image yt">
         <img src="img/saki-yt.png">
@@ -170,7 +255,9 @@
       <div class="saki-image yt">
         <img src="img/sakista.png">
       </div>
-
+<!-- InstaWidget -->
+<a href="https://instawidget.net/v/user/sakikichi1201" id="link-9697a37122d6832dda5608919c058a52690e8f5dc401afad4f863e1b323bdaa3">@sakikichi1201</a>
+<script src="https://instawidget.net/js/instawidget.js?u=9697a37122d6832dda5608919c058a52690e8f5dc401afad4f863e1b323bdaa3&width=450px"></script>
 
     <!--main終わりです-->
     </div>
@@ -214,8 +301,13 @@
   </div>
 
   <!--article start-->
-  <div class="article">  
-    <img src="img/head1.png"> 
+  <div class="article"> 
+    <div id="steak"> 
+    <img src="img/steak1.jpeg"> 
+    <img src="img/steak2.jpeg"> 
+    <img src="img/steak3.jpeg"> 
+    <img src="img/steak4.jpeg"> 
+    </div>
     <div class="post">
 　　　<h1>ステーキの人気ランキング</h1>
       <h2>今年のふるさと納税は…💖</h2>
@@ -306,12 +398,38 @@
 
   <div id="month-list" class="cf">
     <h1>月別記事リスト</h1>
-　　<span>🔽</span>　
+　　<span>🔽</span>
+   
+    <div id="year-list">
+      <ul>
+        <li>月別記事リスト</li>
+        <li>2019年4月</li>
+        <li>2019年3月</li>
+        <li>2019年2月</li>
+        <li>2019年1月</li>
+        <li>2018年12月</li>
+        <li>2018年11月</li>
+        <li>2018年10月</li>
+        <li>2018年9月</li>
+        <li>2018年8月</li>
+        <li>2018年7月</li>
+        <li>2018年6月</li>
+      </ul>
+    </div>
+
   </div>
+
 
   <div id="category" class="cf">
 　　<h1>カテゴリー</h1>
 　　<span>🔽</span>　
+   
+    <div id="year-list2">
+      <ul>
+        <li>✓カテゴリー</li>
+        <li>日記</li>
+      </ul>
+    </div>
   </div>
 
 
@@ -913,6 +1031,14 @@
 
   <!--2個目の課題で使用します-->
 
+  <div id="top-signal">
+    <a href="#">
+    <div id="signal-child"> 
+      <i class = "material-icons">arrow_drop_up</i>
+      <p>TOP</p>
+    </div>
+    </a>
+  </div>
 
 <!--wrappar終わりです-->
 </div>

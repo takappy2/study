@@ -14,10 +14,21 @@
 /*   font-family: 'M PLUS Rounded 1c', sans-serif;*/
 
 
-#background  {
-  width:100%;
-  background-color:purple;
+
+
+video {
+  position:fixed;
+  right:0;
+  bottom:0;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto; 
+  z-index:-10;  
 }
+
+
+
 
 #wrappar {
   width:100%;
@@ -83,6 +94,33 @@
   width:100%;
 }
 
+#list {
+  width:100%;
+  background-color:#F4F4F4;
+}
+
+#list ul {
+  display:table;
+
+}
+
+#list ul li {
+  display:table-cell;
+  vertical-align:middle;
+  font-size:6px;
+  padding-left:13px;
+}
+
+
+#list ul li:hover {
+  color:red;
+  text-shadow:2px 2px 2px #fff;
+}
+.boldli {
+  font-weight:bold;
+  font-size:8px;
+
+}
 
 /*<!--2個目の課題で使用します-->*/
 
@@ -490,6 +528,7 @@
   background-color:#fff;
   box-shadow:3px 3px 3px #808080;  
   margin-top:20px;  
+  position:relative;
 }
 
 #category h1 {
@@ -508,6 +547,49 @@
   width:50%;
   padding-right:19px;
 }
+
+/*カテゴリーの中に隠しておくリスト*/
+
+#year-list {
+  width:580px;
+  position:absolute;
+  background-color:#5F5F5F;
+  color:#fff;
+  font-size:14px;
+  line-height:1.5;
+  padding-left:20px;
+  border:1px solid #000;
+  border-radius:3px;
+  display:none; 
+}
+
+#year-list li:hover {
+ background-color:rgba(0,0,255,0.5);  
+
+}
+
+
+#year-list2 {
+  width:580px;
+  position:absolute;
+  background-color:#5F5F5F;
+  color:#fff;
+  font-size:14px;
+  line-height:1.5;
+  padding-left:20px;
+  border:1px solid #000;
+  border-radius:3px;
+  display:none; 
+}
+
+#year-list2 li:hover {
+ background-color:rgba(0,0,255,0.5);  
+
+}
+
+
+
+
 
 
 /*--2個目の課題で使用します--*/
@@ -655,6 +737,127 @@
 /*--2個目の課題で使用します--*/
 
 
+
+#top-signal  {
+  width:50px;
+  height:50px;
+  background-color:#5F5F5F;
+  border-radius:50%;
+  position:relative;
+  z-index:1;
+  position:absolute;
+  top:20px;
+  right:20px;
+  position:fixed;
+}
+
+#signal-child {
+  position:absolute;
+  z-index:2;
+}
+
+#top-signal .material-icons {
+  padding-left:12px;
+  color:#fff;
+}
+
+#top-signal p {
+  color:#fff;
+  font-size:16px;
+  padding-left:9px;
+}
+
+
+
+
+
+/*スマホ化*/
+
+@media(max-width: 590px) {
+
+#background {
+  background-color:#fff;
+}
+#blog-start {
+    width: 600px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px #808080;
+}
+
+#blog-head {
+    width: 600px;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+.article {
+    width: 600px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow:none;
+    margin-top: 20px;
+}
+
+#blog-body {
+    width: 580px;
+    max-width: 580px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: auto;
+    box-shadow:none;
+}
+
+#content-menu {
+    width: 100%;
+    width: 600px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    font-family: 'Noto Sans SC', sans-serif;
+    margin-top: 20px;
+    box-shadow:none;
+    border: 1px solid #808080;
+}
+
+#top-signal {
+    /* width: 50px; */
+    /* height: 50px; */
+    /* background-color: #5F5F5F; */
+    /* border-radius: 50%; */
+    /* position: relative; */
+    /* z-index: 1; */
+    /* position: absolute; */
+    /* top: 20px; */
+    /* right: 20px; */
+    /* position: fixed; */
+   display:none;
+}
+
+.section-left img {
+    width:100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
+
+.section-text {
+  width:100%;
+  font-size:40px;
+}
+
+
+
+
+
+
+.section-right {
+  display:none;
+}
 
 
 
