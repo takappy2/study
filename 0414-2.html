@@ -1,13 +1,12 @@
 <!doctype html>
-
 <html>
-
-
 <head>
-
 <meta charset="utf-8">
 <link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="0414-2.css">
+<link rel="stylesheet" href="0414.css">
+<link rel="stylesheet" href="css/easyzoom.css" />
+<title>村松のページその２</title>
+
 <!--フォントはここから-->
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -16,60 +15,99 @@
 
 <!--jQueryスタート-->
 
-<script src="js/slick/slick.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-
+<script src="js/slick/slick.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-
 <script>
+  $(function(){
+    $('body').hide().fadeIn(2000);  
+    $('#concept').hide(); 
+    $('#main').hide(); 
+   $('.box').on('click',function(){
+   $(this).css('backgrpund','rgba(0,0,0,0)'); 
+   });
+   <!--スクロールされたときに中が実行され続ける-->
+    $(window).scroll(function() {
+    console.log("スクロール値は$(this).scrollTop()でとる。とった値は→"+ $(this).scrollTop());
+     if ($(this).scrollTop() >13) {
+         $('#concept').fadeIn(3000);
 
-  
-  $(function(){                                                                                       
-  
-  
-  
-   <!--スクロールされたときに中が実行され続ける-->                                                    
-    $(window).scroll(function() {                                                                     
-    console.log("スクロール値は$(this).scrollTop()でとる。とった値は→"+ $(this).scrollTop());         
-     if ($(this).scrollTop() >0) {
-         $('#headder').fadeIn(2000);                                                                  
-        }                                                                                             
-     if ($(this).scrollTop() >290) {                                                                  
-         $('#main').fadeIn(3000);                                                                     
         }
-     if ($(this).scrollTop() >2291) {                                                                 
-         $('#footer').fadeIn(3000);                                                                  
+     if ($(this).scrollTop() >735) {
+         $('#main').fadeIn(3000);
+
         }
-  
-    });         
-    $('.bottom-image').slick({
-       infinite: true,
-       slidesToShow: 1,
-    　 slidesToScroll: 1,
-    　 autoplay: true,
-    　 autoplaySpeed: 1000,
-    　 arrows: true,
+     if ($(this).scrollTop() >2088) {
+         $('#contact').fadeIn(3000);
+
+        }
+ 
+    });
+
+   <!-- スライドショー -->
+   $('#h-slide').slick({
+     infinite: true,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 1000,
+     arrows: true,
    });   
-  
+    
 
-});
+   $('.bottom-image').slick({
+     infinite: true,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 1000,
+     arrows: true,
+   });   
+   
+
+    $("#icon").on("click",function(){
+     $(".taste").fadeToggle(4000);
+  
+   });
+
+
+    $("#icon").on("click",function(){
+     $(".item-sp span").toggle(2000);
+  
+   });
+
+    //toggleの勉強
+      $(".more").on('click' ,function(){
+          $("#main").slideToggle(1000);
+          $("#h-slide").slideToggle(1000);
+
+          //animate({},1000,function(){})が原型
+          $("#wrappar").animate({"backgroundColor":"yellow"},1000 ,function(){
+
+              $("#wrappar").animate({"backgroundColor":"blue"},1000,function(){
+                  $("#wrappar").animate({"backgroundColor":"white"},1000);
+              });
+              $("#icon").animate({"marginLeft":"+=100px"},3000,function(){
+                  $("#icon").animate({"marginTop":"0px"},3000,function(){
+
+                  });
+              });
+
+          });
+
+      });
+
+
+
+  });
 
 </script>
 
 </head>
-
-
-
 <body>
-
 <div id="wrappar">
-  
   <div id="square">
    <div id="border-top"></div>           
    <div id="border-bottom"></div>           
@@ -81,113 +119,224 @@
   <div id="headder">
 
    <div id="h-slide">
-     <div><img src="img2/headder.jpg"></div>      
-   <!--h-slie終わりです--> 
+     <div><img src="img/murama.png"></div>    
+     <div><img src="img/arima.png"></div>    
+     <div><img src="img/takatosan.png"></div>    
+     <div><img src="img/kubotasan.png"></div>    
+     <div><img src="img/ryuuga.png"></div>    
+   <!--h-slide終わりです--> 
    </div>
   
+   <div id="icon"> 
+     <img src="img/icon.png">
+   <!--icon終わりです-->
+   </div>
 
-   <div id="taste">
-     <p>03</p>
-     <h3>our products</h3>   
-　　 <h2>ー</h2>　
-     <h1>Service</h1>
+   <div class="taste">
+     <h1>Taste of smile</h1>
    <!--taste終わりです-->
    </div>
  
 
-
-
   <!--headder終わりです-->
   </div>
 
+  
+  <!--concept始まり-->
+  <div id="concept">
 
-  <div id="title">
-    <h1>Our products</h1>
-  </div>
-  <div id="title">
-    <h2>日系企業向けサービス</h2>
+    <div id="category">
+  
+      <div class="item-sp">
+        <span>concept</span>
+      </div>
+      <div class="item-h1">
+        <h1>Japanese quality for smile</h1>
+      </div>
+      <div class="item-h2">
+        <h2>笑顔になる味を日本品質で。</h2>
+　　　</div>
+      <div class="item-p">
+        <p>N.P. Foods シンガポールは、安心・安全・安価な香料・調味料・原料を世界各国の
+          文化・味覚・食品規格に合わせて開発から製造販売に至るまで一貫して行っている
+          グローバルカンパニーです....。
+        </p>
+      </div>
+      <div class="more hvr-sweep-to-right ">
+        <p>read more　➞</p>
+      </div>
+
+    <!--category終わりです--> 
+    </div>
+
+  <!--concept終わりです-->
   </div> 
 
 
+  <div id="main"class="cf">
+　
+    <div id="main-left">
 
-  <!--main始まり-->
-  <div id="main">
+      <div id="our-products">   
+ 
+        <div id="product-ab">
+          <div class="item-sp white">
+            <span>our products</span>
+          </div>
+          <div class="item-h1 white">
+            <h1>Service</h1>
+          </div>
+          <div class="item-p white">
+             <p>日本国内および海外向けの調味料の開発・製造販売や、
+                東南アジアに工場を持たない食品原料会社等の生産・
+                販売委託を行っております。
+               (このサイトは、日系企業様向けのサービスのみを掲載しており
+                他のサービスについては、各国のサイトをご参照下さい。)
+             </p>
+          </div>
+          <div class="more white erom hvr-sweep-to-right2 ">
+             <p>read more　➞</p>
+          </div>
+      
+      <!--product-ab終わりです--> 
+      </div>
    
-    <div class="section-left cf">
-
-      <div class="left-image">
-        <img src="img2/left-a.png">
-      </div>
-
-      <div class="left-article">
-        <h1>日本国内向け調味料の開発・製造販売</h1> 
-        <h3>日本国内で使用されている調味料の価格を抑えたいお客様向けに原料の安いシンガポールで製造し日本国内渡しでコストを下げて頂くサービスです。勿論、日本国内の食品原料規格に合致した商品をお届けします。</h3> 
-      </div>
-
-    <!--section-left終わりです-->
+    <!--our-products終わりです--> 
     </div>
 
 
-   
-    <div class="section-right cf">
+    <div id="job">
+  
+      <div id="job-ab">    
+        <div class="item-sp">
+          <span>opportunity</span>
+        </div>
+        <div class="item-h1">
+          <h1>Recruit</h1>
+        </div>
+        <div class="item-p">
+          <p>採用情報</p>
+        </div>
+        <div class="more j-more hvr-sweep-to-right2 ">
+          <p>read more　➞</p>
+        </div>
 
-      <div class="right-article">
-        <h1>海外で作られ最終商品を日本国内で販売する商品に使用される調味料の開発・製造販売</h1> 
-        <h3>海外の自社工場又は、協力工場で商品を作り最終商品を日本国内で販売されている商品に使用する原料・調味料を供給させて頂くサービスです。
-日本より調味料を持ち込むとコスト高になる上、輸出・輸入手続きが煩雑で時間がかかる。
-現地で調達すると品質や日本国内の食品規格に合わない原料を使用される心配がある。
-そのような問題を解決させて頂き現地価格・日本品質で調味料を現地工場にお届けさせて頂きます。</h3> 
-      </div>
-
-      <div class="right-image">
-        <img src="img2/right-a.png">
-      </div>
-
-    <!--section-right終わりです-->
-    </div>
-
-   
-    <div class="section-left cf">
-
-      <div class="left-image">
-        <img src="img2/left-b.png">
-      </div>
-
-      <div class="left-article">
-        <h1>日系企業が海外で現地向けとして製造される商品に使用される調味料の開発・製造販売</h1> 
-        <h3>最近、日系企業のお客様が現地で現地向け商品を製造販売される商売が増えて来ましたが、現地の調味料では、品質に不安があり、現地の食品規格(HALAL等)に精通していない問題を解決させて頂き、現地に合った味・規格で現地価格・日本品質の調味料をお届けさせて頂くサービスです。</h3> 
-      </div>
-
-    <!--section-left終わりです-->
+      <!--job-ab終わりです-->
+      </div> 
+    <!--job終わりです--> 
     </div>
 
 
+    <!--main-left終わりです-->
+    </div>
+
+    
+    <div id="main-right">
+ 
+
+      <div id="ceo">
+  
+        <div id="ceo-ab">    
+          <div class="item-sp">
+          <span>ceo message</span>
+        </div>
+        <div class="item-h1">
+          <h1>Message</h1>
+        </div>
+        <div class="item-p">
+          <p>代表取締役社長メッセージ</p>
+        </div>
+        <div class="more j-more hvr-sweep-to-right2 ">
+          <p>read more　➞</p>
+        </div>
+
+      <!--job-ab終わりです-->
+      </div> 
+    <!--job終わりです--> 
+    </div>
+
+
+    <div id="kids">   
+ 
+      <div id="kids-ab">
+        <div class="item-sp white">
+          <span>information</span>
+        </div>
+        <div class="item-h1 white">
+          <h1>Company</h1>
+        </div>
+        <div class="item-p white">
+          <p>アジア・太平洋地域において、スナック菓子、
+             インスタント食品、冷凍食品に使用する香料・
+             調味料・原料に特化した開発・製造・販売を行う
+             日本資本のシンガポール法人です。
+           </p>
+        </div>
+        <div class="more white erom hvr-sweep-to-right2 ">
+           <p>read more　➞</p>
+        </div>
+      
+      <!--product-ab終わりです--> 
+      </div>
    
-    <div class="section-right cf">
-
-      <div class="right-article">
-        <h1>産・販売委託(OEM)</h1> 
-        <h3>日本からだと価格が合わない。
-相手国の食品規格ライセンスの取得が出来ない。(HALAL、HACCP等)
-現地に工場を設立したいが、十分な商売がない。
-そのようなお客様にN.P.シンガポール社のブレンド設備やライセンス等をご利用頂くサービスで守秘義務契約を締結後、原料・添加剤・改良剤等をお客様に変わり製造・販売させて頂くサービスです。</h3> 
-      </div>
-
-      <div class="right-image">
-        <img src="img2/right-b.png">
-      </div>
-
-    <!--section-right終わりです-->
+    <!--our-products終わりです--> 
     </div>
 
 
 
-
+    <!--main-right終わりです-->
+    </div>
 
 
   <!--main終わりです-->
   </div>
 
+
+  <div id="contact" class="cf">
+
+    <div class="box one overlay1"> 
+ 
+      <div class="radio">
+        <p>Head Office&Factory</p>
+        <h2>Singapore</h2>
+      </div>
+    </div>
+    
+    <div class="box two overlay1"> 
+    
+      <div class="radio">
+        <p>Base Office&Factory</p>
+        <h2>bangkok</h2>
+      </div>
+    </div>
+
+    <div class="box three overlay1"> 
+    
+      <div class="radio">
+        <p>Base Office&Factory</p>
+        <h2>jakarta</h2>
+      </div> 
+    </div>
+
+    <div class="box four overlay1"> 
+    
+      <div class="radio">
+        <p>Base Office</p>
+        <h2>shanghai</h2>
+      </div>
+    </div>
+  
+  <!--contact終わりです-->
+  </div>
+
+
+  <div id="kyousan">
+    <img src="img/kyousan.png"> 
+  </div>
+
+  <div id="inquiry">
+    <img src="img/inquiry.png"> 
+  </div>
 
 
 
