@@ -45,23 +45,40 @@
      if ($(this).scrollTop() >4000) {
          
          $('#top-signal').hide();
-         $('#top-signal').fadeIn(2000);
+         $('#top-signal').fadeIn(1000);
 
         }
+
+$('#top-signal').click(function() {
+ 
+    $('html').animate({scrollTop: 0});
+ 
+})
+
+ //    if $(this).scrollTop() <255) {
+   //      $("#background").animate({"backgroundColor":"rgb(0,0,0"},1000 ,function(){
+       	 
+//		var aaa = $(this).scrollTop();
+//		$("#background").css("backgroundColor":"rgb(255,255,aaa)");
+  //        });
+
+    //    }
+       	
+
+   
+
+   $("#month-list").click(function(){
+       $("#year-list").toggle();    
+
+     });
+
+   $("#category").click(function(){
+       $("#year-list2").toggle();    
+
+     });
+
  
     });
-
-   $("#month-list").on("click",function(){
-       $("#year-list").toggle(500);    
-
-     });
-
-   $("#category").on("click",function(){
-       $("#year-list2").toggle(500);    
-
-     });
-
-
 
 
 
@@ -89,7 +106,6 @@
 
 
 
-
   });
 
 
@@ -98,8 +114,9 @@
 <body>
 
 
+<div id="background">
 
-<video src="video.mp4"></video>  
+</div>
 
 
 <div id="wrappar">
